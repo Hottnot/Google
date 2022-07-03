@@ -1,28 +1,46 @@
 .container {
     display: grid;
     height: 100vh;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 850px 100px
 }
 
 nav {
     background: pink;
+    grid-area: nav;
 }
 
-main {
+.main {
     background: green;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "logo logo logo logo"
+    "searchbar searchbar searchbar searchbar"
+    "button button button button";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 360px 70px 450px;
 }
 
 .content1 {
     background: rgb(192, 26, 26);
+    grid-area: logo;
 }
 
 .content2 {
     background: rgb(234, 181, 25);
+    grid-area: searchbar;
 }
 
 .content3 {
     background: rgb(255, 255, 255);
+    grid-area: button;
 }
 
 footer {
     background: rgb(18, 143, 221);
+    grid-area: footer;
 }
