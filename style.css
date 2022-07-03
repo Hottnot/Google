@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    height: 100vh;
+}
+
+nav {
+    background: pink;
+}
+
+main {
+    background: green;
+}
+
+.content1 {
+    background: rgb(192, 26, 26);
+}
+
+.content2 {
+    background: rgb(234, 181, 25);
+}
+
+.content3 {
+    background: rgb(255, 255, 255);
+}
+
+footer {
+    background: rgb(18, 143, 221);
+}
