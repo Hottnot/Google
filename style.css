@@ -1,79 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: grid;
+    width: 100vw;
     height: 100vh;
-    grid-template-areas: 
-        "nav nav nav nav"
-        "main main main main"
-        "footer footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 0.5px;
+    grid-template-areas: "nav nav nav nav nav nav nav nav"
+    "empty empty empty empty empty empty empty empty"
+    "main main main main main main main main"
+    "emptyb emptyb emptyb emptyb emptyb emptyb emptyb emptyb"
+    "footer footer footer footer footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 0.5fr;
+
 }
 
-nav {
+.navbar {
     grid-area: nav;
-    display: grid;
-    grid-template-areas: 
-    "left right";
-    grid-template-columns: 1fr 1fr;
+    background: yellow;
 }
 
-ul li {
-    display: inline-block;
-}
-
-.leftnav {
-    list-style: none;
-    grid-area: left;
-    align-self: center;
-}
-
-.rightnav {
-    list-style: none;
-    grid-area: right;
-    justify-self: end;
-    align-self: center;
-}
-
-.appslogo {
-    max-width: 30px;
+.empty {
+    grid-area: empty;
+    background: gray;
 }
 
 .main {
     grid-area: main;
-    display: grid;
-    grid-template-areas: "logo logo logo logo";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: rgb(13, 241, 237);
 }
 
-.content1 {
-    margin: 10px;
-    grid-area: logo;
-    justify-self: center;
-    align-self: center;
-    display: grid;
-    grid-template-areas: "notgoogle"
-    "stillnotgoogle"
-    "googlerow"
-    "searchrow"
-    "buttonsrow";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+.emptybottom {
+    grid-area: emptyb;
+    background: gray;
 }
 
-.googlelogo {
-    grid-area: googlerow;
-    max-width: 250px;
-    margin: 10px;
-}
-
-.content2 {
-    grid-area:;
-}
-
-.content3 {
-    grid-area:n;
-}
-
-footer {
+.footer {
     grid-area: footer;
+    background: rgb(205, 85, 239);
 }
