@@ -161,4 +161,8 @@ ul li {
 
 .footer {
     grid-area: footer;
+    grid-template-areas: "nz nz"
+    "footleft footright";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
