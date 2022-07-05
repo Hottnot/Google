@@ -6,7 +6,8 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    font-weight: bold;
+    background-color: #202124;
+    color: white;
 }
 
 .container {
@@ -91,15 +92,67 @@ ul li {
     display: flex;
     justify-content: center;
     align-content: center;
+    background-color: #202124;
+    color: white;
+}
+
+.lense {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.mic {
+    max-width: 30px;
+    max-height: 30px;
 }
 
 .search {
+    margin-left: 20px;
     height: 44px;
-    width: 580px;
+    width: 680px;
+    border: thin;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(195, 195, 195);
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: #202124;
+    color: white;
 }
 
-.searchbuttons {
+.googlesearchbuttons {
     grid-area: buttons;
+    display: grid;
+    grid-template-areas: "leftbutton rightbutton";
+    grid-template-columns: 1fr 1fr;
+}
+
+.searchbutton {
+    grid-area: leftbutton;
+    display: flex;
+    justify-self: end;
+    justify-content: center;
+    width: 127px;
+    height: 18px;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #303134;
+    border-radius: 4px;
+}
+
+.luckybutton {
+    grid-area: rightbutton;
+    display: flex;
+    justify-content: center;
+    width: 127px;
+    height: 18px;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #303134;
+    border-radius: 4px;
 }
 
 .emptybottom {
